@@ -1,0 +1,9 @@
+/* write your css here */
+* {
+    scrollbar-width: none;
+  }
+  
+  /* For Chrome/Safari/Edge */
+  *::-webkit-scrollbar {
+    display: none;
+  }
