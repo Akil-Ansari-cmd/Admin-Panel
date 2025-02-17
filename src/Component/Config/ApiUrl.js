@@ -9,5 +9,6 @@ export const ApiUrl = {
     add: "adminapp/blog-api-of-admin/",
     faq: "adminapp/faq-admin-api/",
     plan: "adminapp/planmodule-by-admin/",
-    module : "adminapp/plan_by_admin/"
+    module : "adminapp/plan_by_admin/",
+    history: "adminapp/user-plan-history/"
 }

@@ -17,6 +17,10 @@ import NewPlan from '../../Component/Home/NewPlan';
 import Plan from '../../Component/Home/Plan';
 import { ActiveApi, AdminManage, StatusUpdate } from '../../Component/Services/Get Otp';
 import Blog from '../../Component/Home/Blog';
+import PlanHistory from '../Plan History/PlanHistory';
+import { FcBullish } from "react-icons/fc";
+import { FcDataBackup } from "react-icons/fc";
+
 // import { Blog, Faq, Edit, Logout, NewPlan, Plan } from '../../Component/Services/Admin Blog';
 const Admin = () => {
     
@@ -129,12 +133,19 @@ const Admin = () => {
                             </div>
                             <div className='mt-1 text-xl'>{content === "Plan" ? <IoIosArrowForward /> : <ExpandMoreIcon />}</div>
                         </div>
-                        <div onClick={() => setContent("Module")} className='flex justify-between text-pink-500'>
+                        <div onClick={() => setContent("Module")} className='flex justify-between text-green-500'>
                             <div className='flex text-xl gap-2'>
-                                <div><FcSalesPerformance className='mt-1 ' /></div>
+                                <div><FcBullish className='mt-1 ' /></div>
                                 <div>PLAN</div>
                             </div>
                             <div className='mt-1 text-xl'>{content === "Module" ? <IoIosArrowForward /> : <ExpandMoreIcon />}</div>
+                        </div>
+                        <div onClick={() => setContent("History")} className='flex justify-between text-slate-500'>
+                            <div className='flex text-xl gap-2'>
+                                <div><FcDataBackup className='mt-1 ' /></div>
+                                <div>PLAN HISTORY</div>
+                            </div>
+                            <div className='mt-1 text-xl'>{content === "History" ? <IoIosArrowForward /> : <ExpandMoreIcon />}</div>
                         </div>
                     </div>
                 </div>
@@ -300,6 +311,11 @@ const Admin = () => {
                         {
                             content === "Module" && <div>
                                 <NewPlan />
+                            </div>
+                        }
+                        {
+                            content === "History" && <div>
+                                <PlanHistory />
                             </div>
                         }
                     </div>
