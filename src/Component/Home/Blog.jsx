@@ -120,13 +120,13 @@ const Blog = () => {
             <div className='grid grid-cols-3 gap-4'>
                 {data && data.map((item, index) => (
                     <div key={index} className='p-4'>
-                        <div className='grid border text-center'>
+                        <div className='grid border text-center text-white'>
                             <div className='font-bold'>{item.title}</div>
                             <div onClick={() => {
                                 console.log("Item being passed:", item);  // Log the item to ensure it's valid
                                 Navigate("/Blog", { state: item });
                             }}>
-                                <img className='h-40 w-40 object-cover mx-auto' src={`http://192.168.1.188:8098/${item?.images}`} alt={item.title} />
+                                <img className='h-40 w-40 object-cover mx-auto' src={`http://192.168.1.188:8099${item?.images}`} alt={item.title} />
                             </div>
                         </div>
                     </div>

@@ -83,7 +83,7 @@ const Plan = () => {
             <div className='grid grid-cols-3 gap-5'>
                 {data.map((i, index) => (
                     <div key={index} className=''>
-                        <div className='h-48 border rounded-lg text-7xl flex justify-center items-center border-black'>
+                        <div className='h-48 border rounded-lg text-7xl flex justify-center items-center border-white text-white'>
                             {i?.name}
                         </div>
                         <div className='flex justify-between mt-5'>

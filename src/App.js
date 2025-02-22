@@ -5,6 +5,8 @@ import Matrimony from "./Component";
 import NewBlog from "./Component/Home/NewBlog";
 import Panel from "./Pages/Panel/Panel";
 import Admin from "./Pages/Admin/Admin";
+import VisitoryPlan from "./Pages/User/VisitoryPlan";
+import GetMessage from "./Pages/Chat Message/GetMessage";
 // import Panel from "./Component/Home/Panel";
 
 
@@ -15,15 +17,13 @@ function App() {
    
     <Routes>
     <Route path="/" element={<Matrimony/>}/>
-    {/* <Route path="/head" element={<Login/>}/>
-    <Route path="/dash" element={<Dashboard/>}/>
-    <Route path="/prof" element={<Profile/>}/> */}
     <Route path="/Panel" element={<Panel/>}/>
     <Route path="/Admin" element={<Admin/>}/>
     <Route path="/Blog" element={<NewBlog/>}/>
-    {/* <Route path="/Plan" element={<NewPlan/>}/> */}
-    {/* <Route path="/Acti" element={<Activity/>}/>
-    <Route path="/Search" element={<Search/>}/> */}
+    <Route path="/Visitor" element={<VisitoryPlan/>}/>
+    <Route path="/Message" element={<GetMessage/>}/>
+    {/* <Route path="/Hobby" element={<Hobby/>}/> */}
+    {/* <Route path="/HobbyReport" element={<HobbyReport/>}/> */}
     </Routes>
    </BrowserRouter>
    </>

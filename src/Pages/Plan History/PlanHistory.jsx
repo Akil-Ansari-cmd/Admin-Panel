@@ -28,13 +28,13 @@ const PlanHistory = () => {
                     </div>
 
                     <div className='border border-gray-300 my-5 mx-7 rounded-sm overflow-y-auto max-h-[100vh]'>
-                        <div className='flex text-sm border-b-2'>
+                        <div className='flex text-sm border-b-2 !text-white'>
                             <div className='w-[10%] font-semibold p-1 py-2 pl-2 border-r border-gray-300'>#</div>
                             <div className='w-[30%] font-semibold py-2 px-3 border-r border-gray-300 flex justify-between'>User Profile
-                                <div><BiSort className='font-semibold text-gray-400 text-lg' /></div>
+                                <div><BiSort className='font-semibold  text-lg' /></div>
                             </div>
                             <div className='w-[30%] font-semibold py-2 px-3 border-r border-gray-300 flex justify-between'>Status
-                                <div><BiSort className='font-semibold text-gray-400 text-lg' /></div>
+                                <div><BiSort className='font-semibold  text-lg' /></div>
                             </div>
                             {/* <div className='w-[20%] font-semibold py-2 px-3 border-r border-gray-300 flex justify-between'>Price
                                 <div><BiSort className='font-semibold text-gray-400 text-lg' /></div>
@@ -43,12 +43,12 @@ const PlanHistory = () => {
                                     <div><BiSort className='font-semibold text-gray-400 text-lg' /></div>
                                 </div> */}
                             <div className='w-[30%] font-semibold py-2 px-3 border-gray-300 flex justify-between'>Action
-                                <div><BiSort className='font-semibold text-gray-400 text-lg' /></div>
+                                <div><BiSort className='font-semibold  text-lg' /></div>
                             </div>
                         </div>
                         <div className="overflow-y-auto">
                             {data && data.map((item, index) => (
-                                <div key={index} className='flex text-sm border-t text-gray-500'>
+                                <div key={index} className='flex text-sm border-t text-white'>
                                     <div className='w-[10%] p-1 py-2 pl-2 border-r border-gray-300'>{index + 1}</div>
                                     <div className='w-[30%] py-2 px-3 border-r border-gray-300 truncate'>{item?.
                                         user_profile

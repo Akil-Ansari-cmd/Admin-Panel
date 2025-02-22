@@ -42,7 +42,7 @@ const Edit = ({ item, PlanHistory }) => {
             {open && (
                 <div className='fixed bg-black bg-opacity-50 z-50 h-[100vh] left-0 w-[100%] inset-0 py-20'>
                     <div onClick={(e) => e.stopPropagation()} className='h-[100%] mx-auto w-[70%]'>
-                        <form onSubmit={formik.handleSubmit} className='lg:h-[100%] h-[50%] pl-10 m-auto w-[45vw] border rounded-md bg-white shadow-lg'>
+                        <form onSubmit={formik.handleSubmit} className='lg:h-[100%] text-black h-[50%] pl-10 m-auto w-[45vw] border rounded-md bg-white shadow-lg'>
                             <div className='font-semibold text-3xl mt-5 text-center'>Edit User's Plan</div>
                             <div className='text-center'>Brief outline of User's information</div>
                             <div className='grid grid-cols-2 gap-2'>
